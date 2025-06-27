@@ -23,7 +23,11 @@ public class Cliente {
     }
     
     private boolean correoValido(String correo) {
-        return correo != null && correo.contains("@");
+        if (correo == null) {
+            return false;
+        }
+        String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        return correo.matches(regex);
     }
     
     public void actualizarNivel() {
