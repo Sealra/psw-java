@@ -14,7 +14,7 @@ public class ClienteTest {
         assertEquals("john@example.com", cliente.getCorreo());
         assertEquals(0, cliente.getPuntos());
         assertEquals(Nivel.BRONCE, cliente.getNivel());
-        assertEquals(0, cliente.getBonus());
+        assertEquals(0, cliente.getStreakDias());
     }
     
     @Test
