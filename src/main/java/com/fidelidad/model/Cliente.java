@@ -6,12 +6,12 @@ public class Cliente {
     private String correo;
     private int puntos;
     private Nivel nivel;
-    private int bonus;
+    private int streakDias;
     
     public Cliente(int id, String nombre, String correo) {
         this.id = id;
         this.nombre = nombre;
-        this.bonus = 0;
+        this.streakDias = 0;
         if (!correoValido(correo)) {
             throw new IllegalArgumentException("Correo electrónico inválido");
         }
@@ -19,7 +19,7 @@ public class Cliente {
         
         this.puntos = 0;
         this.nivel = Nivel.BRONCE;
-        this.bonus = 0;
+        this.streakDias = 0;
     }
     
     private boolean correoValido(String correo) {
@@ -78,11 +78,11 @@ public class Cliente {
         return nivel;
     }
     
-    public int getBonus() {
-        return bonus;
+    public int getStreakDias() {
+        return streakDias;
     }
 
-    public void setBonus(int bonus) {
-        this.bonus = bonus;
+    public void setStreakDias(int streakDias) {
+        this.streakDias = streakDias;
     }
 }
