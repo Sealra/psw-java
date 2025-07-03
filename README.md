@@ -146,4 +146,3 @@ A través de Jacoco, automáticamente se mide la cobertura de instrucciones, ram
 **Razones técnicas**:
 
 - Contiene únicamente lógica de interfaz de usuario y la lógica ya está completamente probada en servicios
-  > > > > > > > Stashed changes
