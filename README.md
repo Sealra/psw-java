@@ -38,3 +38,8 @@ open target/site/jacoco/index.html
 
 
 ```
+
+### Coverage
+
+![image](https://github.com/user-attachments/assets/2cd3f87e-6bd3-4dc4-ab4e-c2a1733870c8)
+
